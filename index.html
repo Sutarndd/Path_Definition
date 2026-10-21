@@ -178,6 +178,7 @@
     function initMap() {
       state.apiLoaded = true;
       state.map = new BMapGL.Map("map");
+      state.map.setMapType(BMAP_EARTH_MAP);
       state.map.centerAndZoom(new BMapGL.Point(YQ_CENTER.lng, YQ_CENTER.lat), 18);
       state.map.enableScrollWheelZoom(true);
       state.map.addControl(new BMapGL.ZoomControl());
